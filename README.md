@@ -68,3 +68,39 @@ npm install @grpc/grpc-js // Beta
 
 6. yarn build // Generate JS and TS proto files
 ```
+
+##### Project Installation
+```
+1. yarn server
+2. yarn client
+```
+
+##### Client Example
+
+```
+import { User, UserRequest } from "../proto/users_pb";
+import { UsersClient } from "../proto/users_grpc_pb";
+import { credentials } from "grpc";
+
+const port = 3000;
+
+// Contains connection to the GRPC Server
+const client = new UsersClient(
+    `localhost:${port}`,
+    credentials.createInsecure(),
+);
+
+function getUsers(id: number) {
+    return new Promise<User>((resolve, reject) => {
+        const request = new UserRequest();
+        request.setId(1);
+
+        client.getUser(request, (err, user) => {
+            if (err) reject(err);
+            else resolve(user);
+        });
+    });
+}
+```
+
+![grpcscreenshot](https://i.imgur.com/Y98sEL8.png)
