@@ -1,0 +1,18 @@
+{
+  "name": "GRPC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shubhamd99/grpc-nodejs.git",
+  "author": "Shubham Dhage <shubham.dhage@swiggy.in>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/google-protobuf": "^3.7.4",
+    "grpc-tools": "^1.10.0",
+    "grpc_tools_node_protoc_ts": "^5.1.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "grpc": "^1.24.6"
+  }
+}
