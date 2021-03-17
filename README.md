@@ -20,6 +20,10 @@
 7. Automatically generated boilerplate
 
 ##### Protocol Buffers
+
+* Protocol Buffers is a method of serializing structured data.
+* Google Protobuf - https://developers.google.com/protocol-buffers/docs/reference/google.protobuf
+
 ```
 syntax = "proto3"
 
