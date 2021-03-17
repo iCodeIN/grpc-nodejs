@@ -20,7 +20,7 @@
 7. Automatically generated boilerplate
 
 ##### Protocol Buffers
-
+```
 syntax = "proto3"
 
 // Define message types
@@ -35,6 +35,7 @@ service EchoService {
     rpc EchoServerStream (EchoMessage) returns (stream EchoMessage);
     rpc EchoBidiStream (stream EchoMessage) returns (stream EchoMessage); // BiDirectional
 }
+```
 
 ##### gRPC and JavaScript
 1. Two primary environments: Browser and Node.js
