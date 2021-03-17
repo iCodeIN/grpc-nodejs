@@ -59,6 +59,7 @@ npm install @grpc/grpc-js // Beta
 ```
 
 ##### Project Installation
+```
 1. yarn init -y
 2. yarn add typescript -D
 3. yarn run tsc --init    
@@ -66,3 +67,4 @@ npm install @grpc/grpc-js // Beta
 5. yarn add ts-node grpc-tools @types/google-protobuf grpc_tools_node_protoc_ts -D
 
 6. yarn build // Generate JS and TS proto files
+```
