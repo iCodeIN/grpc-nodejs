@@ -10,6 +10,8 @@
 
 * Leverages HTTP2 and protocol buffers.
 
+* VSCode Plugin - https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
+
 ##### Features
 1. Four RPC types
 2. Metadata
@@ -62,3 +64,5 @@ npm install @grpc/grpc-js // Beta
 3. yarn run tsc --init    
 4. yarn add grpc
 5. yarn add ts-node grpc-tools @types/google-protobuf grpc_tools_node_protoc_ts -D
+
+6. yarn build // Generate JS and TS proto files
